@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+  function checkFilled(){
+    if (inputVal.value!==""){inputVal.style.backgroundColor= blue;}
+  }
+    </script>
+</head>
+    <div class="inner clearfix">
+
+      <div class="menu-group float--left">
+        <div class="logo">
+          <a href="">Github</a>
+        </div>
+
+        <ul class="main-menu toggle">
+          <li> <a href="">Why GitHub?<span class="dropbtn_click" style="font-family: Material Icons; 
+                font-size : 16px; color : gray; ">arrow_drop_down
+                </span> </a></li>
+          <li><a href="">Term</a></li>
+          <li><a href="">Enterprise</a></li>
+          <li><a href="">Explore<span class="dropbtn_click" style="font-family: Material Icons; 
+            font-size : 16px; color : gray; ">arrow_drop_down
+            </span> </a></li>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Pricing<span class="dropbtn_click" style="font-family: Material Icons; 
+            font-size : 16px; color : gray; ">arrow_drop_down
+            </span> </a></li>
+        </ul>
+      </div>
+
+      <div class="sign-group float--right toggle">
+        <div class="btn-group">
+          <a class="btn sign-in" href="">Sign in</a>
+          <a class="btn sign-up" href="">Sign up</a>
+        </div>
+
+        <form id="search-form" method="post" action="">
+          <input id="search" class="input--text" type="text" placeholder="Search GitHub">
+          <input type="submit">
+        </form>
+
+      </div>
+
+    </div>
+  
+  <se class="section section--visual">
+    <div class="inner">
+
+      <div class="summary">
+        <h2 class="summary__title">Built for <br>developers</h2>
+        <p class="summary__description">GitHub is a development platform ispired 
+            by the way you work. From <span class="empha"> open source</span> to <span class="empha">business</span>,
+            you can host and review code, manage progects, and build software 
+            alongside 50 million deveopers.</p>
+      </div>
+
+      <div id="sign-in" method="post" action="">
+        <ul>
+          <li><div>Username</div><input class="input--text" onchange="checkFilled();"type="text" ></li>
+          <li><div>Email</div><input class="input--text"onchange="checkFilled();" type="email"></li>
+          <li><div>Password</div>
+            <input class="input--text" onchange="checkFilled();" type="password">
+            <p class="caption">Make sure it's at least 15 characters OR at least 8 characters 
+                including a number and a lowercase letter.
+                <a href="" style="color: blue;"> Learn more.</a></p>
+          </li>
+          <li>
+            <button class="btn signupGH" type="submit">Sign up for GitHub</button>
+            <p class="caption">By clicking "Sign up for GitHub", you agree to our 
+                <a href="" style="color: blue;">Terms of Service</a> 
+                and <a href="" style="color: blue;">Privacy Statement</a>.
+              We'll occasionally send you account related emails.</p>
+          </li>
+        </ul>
+      </div>
+</div>
+</se>
+ 
+</body>
+</html>
